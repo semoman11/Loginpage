@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+.Home{
+    background-image: url(./background.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    color: white;
+    font-size: 22px;
+    z-index: 99;
+}
+header nav a{
+    font-size: 24px;
+    color: white;
+    margin-left: 60px;
+    position: relative;
+}
+header nav a::before{
+    content: "";
+    width: 100%;
+    height: 2.5px;
+    background-color: white;
+    position: absolute;
+    border-radius: 4px;
+    bottom: -5px;
+    transition: .3s;
+    transform: scaleX();
+}
+
+
+header nav a:hover::before,
+header nav .active::before{
+    transform: scaleX(.7);
+}
+form{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    backdrop-filter: blur(40px);
+    color: white;
+    font-size: 20px;
+    border: 2px solid rgba(255,255,255, .5);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+form h1{
+    font-size: 40px;
+}
+.input-box{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 20px 0;
+    padding: 12px 0;
+    
+}
+.input-box input{
+    width: 88%;
+    color: white;
+    font-size: 15px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.input-box input::placeholder{
+    font-size: 17px;
+    color: white;
+
+}
+.input-box ion-icon{
+    font-size: 25px;
+
+}
+.checkbox{
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkbox h5{
+    font-size: 16px;
+    font-weight: 100;
+    cursor: pointer;
+    user-select: none;
+
+}
+.checkbox label{
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+
+}
+.checkbox input{
+    cursor: pointer;
+    margin-right: 3px;
+
+}
+.checkbox span{
+    display: flex;
+
+}
+.submit-btn{
+    width: 76%;
+    height: 36px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 15px 0 22px;
+    border: none;
+    font-size: 16px;
+}
